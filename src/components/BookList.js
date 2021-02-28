@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import { ThemeContext } from "../contexts/ThemeContext";
 
 class BookList extends Component {
@@ -6,10 +7,6 @@ class BookList extends Component {
   render() {
     const { isLightTheme, light, dark } = this.context;
     const theme = isLightTheme ? light : dark;
-    console.log("isLightTheme: ", isLightTheme);
-    console.log("light: ", light);
-    console.log("dark: ", dark);
-    console.log("theme: ", theme);
     return (
       <div
         className="book-list"
